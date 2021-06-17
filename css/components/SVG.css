@@ -1,0 +1,68 @@
+@value --circle-group-fade-speed from "../timeControl.css";
+@value --circle-transition-speed from "../timeControl.css";
+@value --circle-scale-speed from "../timeControl.css";
+@value --path-render-speed from "../timeControl.css";
+
+svg {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    mask-image: url('/images/masks/mask1.png'),  url('/images/masks/mask2.png');
+    mask-repeat: no-repeat, no-repeat;
+    mask-position: -1000px 100px, 0px 300px;
+    mask-size: cover;
+
+    -webkit-mask-image: url('/images/masks/mask1.png'),  url('/images/masks/mask2.png');
+    -webkit-mask-repeat: no-repeat, no-repeat;
+    -webkit-mask-position: -1000px 100px, 0px 300px;
+    -webkit-mask-size: cover;
+
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    transition: all 1s ease;
+}
+svg path {
+    clip-path: circle(0% at left);
+    transition: clip-path var(--path-render-speed) ease-in-out;
+}
+svg .circle-group {
+    cursor: pointer;
+    transition: offset-distance var(--circle-transition-speed) ease-in-out, opacity 0.2s ease-in-out;
+}
+svg .circle-group > text {
+    opacity: 0;
+    fill: #fff;
+    font-family: FontAwesome;
+    font-size: 44px;
+    text-anchor: middle;
+    user-select: none;
+    offset-rotate: 0deg;
+    transition: opacity var(--circle-scale-speed) ease-in-out, offset-distance var(--circle-transition-speed) ease-in-out;
+}
+.circles-group {
+    opacity: 0;
+    transition: opacity var(--circle-group-fade-speed) ease-in-out;
+}
+.circle-obj {
+    fill: #846449;
+    transition: offset-distance var(--circle-transition-speed) ease-in-out, r var(--circle-scale-speed) ease-in-out, fill var(--circle-scale-speed) ease-in-out;
+}
+.circle-group:hover > .circle-obj {
+    fill: #d88948;
+}
+.circle-group > g {
+    transition: offset-distance var(--circle-transition-speed) ease-in-out;
+    offset-rotate: 0deg;
+    user-select: none;
+}
+.circle-group .circle-desc-head {
+    font-size: 1.4vh;
+    text-anchor: start;
+}
+.circle-group .circle-desc-text {
+    font-size: 1.8vh;
+    text-anchor: start;
+}

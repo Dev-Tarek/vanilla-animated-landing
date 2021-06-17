@@ -1,0 +1,45 @@
+navbar {
+    position: fixed;
+    top: 24px;
+    left: 48px;
+    z-index: 10;
+}
+navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+navbar ul li {
+    margin-right: 24px;
+    font-size: 1.4vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;
+}
+navbar ul li a, navbar ul li a:focus {
+    position: relative;
+    color: gray;
+    text-decoration-line: none;
+    transition: color 0.2s ease;
+}
+navbar ul li a:hover {
+    text-decoration-line: none;
+    color: white;
+}
+navbar ul li a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    width: 0%;
+    margin: auto;
+    transition: width 0.2s ease;
+    background-color: white;
+}
+navbar ul li a:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+@value --carousel-transition-speed from "../timeControl.css";
+
+.carousel-div {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    top: 20%;
+}
+
+.carousel-div img {
+    position: fixed;
+    width: 40%;
+    top: 20%;
+    transition: all var(--carousel-transition-speed) ease-in-out;
+}
+
+.carousel-div p {
+    position: absolute;
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 2px 4px;
+    top: 100px;
+    left: 24%;
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 2px 0px #00000066;
+    z-index: 2;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-div img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-div img {
+        width: 80%;
+    }
+}

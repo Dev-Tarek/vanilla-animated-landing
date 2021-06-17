@@ -1,0 +1,10 @@
+:root {
+    --circle-group-fade-speed: 300ms;
+    --circle-transition-speed: 1500ms;
+    --circle-scale-speed: 300ms;
+    --path-render-speed: 3000ms;
+    
+    --carousel-transition-speed: 2000ms;
+
+    --animated-text-transition-speed: 500ms;
+}

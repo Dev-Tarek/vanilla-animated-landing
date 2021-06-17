@@ -1,0 +1,33 @@
+@value --animated-text-transition-speed from "../timeControl.css";
+
+.animated-text {
+    display: flex;
+    justify-content: center;
+}
+.animation-block{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    padding: 16px;
+    align-items: center;
+}
+.animation-block .text-animation {
+    margin: 0px;
+    padding: 8px;
+    color: #444;
+    font-size: 6vw;
+    height: 6vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.animation-block .text-animation p {
+    margin: 0;
+    transition: all var(--animated-text-transition-speed) ease-in-out;
+}
+.animation-block .text-animation:nth-child(even) {
+    font-weight: 600;
+    font-size: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+}
