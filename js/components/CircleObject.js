@@ -17,7 +17,7 @@ class CircleObject {
             clickHandler
         } = options;
         this.path = path;
-        this.radius = radius || 15;
+        this.radius = radius || 10;
         this.iconCode = iconCode || '';
         this.className = className || 'circle-obj';
         this.positions = positions || [15, 30, 45, 60, 75];
@@ -52,14 +52,20 @@ class CircleObject {
     activateCircle () {
         let { circle, hoverRadius, iconText } = this;
         circle.setAttribute('r', hoverRadius);
+        circle.style.stroke = 'none';
+        circle.style.fill = '#d88948';
         iconText.style.opacity = '1';
+        iconText.style.fontSize = '44px';
     }
 
     resetCircle () {
         if (!this.active) {
             let { circle, radius, iconText } = this;
             circle.setAttribute('r', radius);
+            circle.style.stroke = '#846449';
+            circle.style.fill = '#fff';
             iconText.style.opacity = '0';
+            iconText.style.fontSize = '24px';
         }
     }
 

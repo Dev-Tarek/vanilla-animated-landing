@@ -36,18 +36,20 @@ svg .circle-group > text {
     opacity: 0;
     fill: #fff;
     font-family: FontAwesome;
-    font-size: 44px;
+    font-size: 24px;
     text-anchor: middle;
     user-select: none;
     offset-rotate: 0deg;
-    transition: opacity var(--circle-scale-speed) ease-in-out, offset-distance var(--circle-transition-speed) ease-in-out;
+    transition: opacity var(--circle-scale-speed) ease-in-out, font-size var(--circle-scale-speed) ease-in-out, offset-distance var(--circle-transition-speed) ease-in-out;
 }
 .circles-group {
     opacity: 0;
     transition: opacity var(--circle-group-fade-speed) ease-in-out;
 }
 .circle-obj {
-    fill: #846449;
+    fill: #fff;
+    stroke: #846449;
+    stroke-width: 8px;
     transition: offset-distance var(--circle-transition-speed) ease-in-out, r var(--circle-scale-speed) ease-in-out, fill var(--circle-scale-speed) ease-in-out;
 }
 .circle-group:hover > .circle-obj {

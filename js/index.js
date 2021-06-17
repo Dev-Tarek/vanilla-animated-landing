@@ -27,18 +27,18 @@ let animationFunctions = [];
 // Animated Text
 let textList = [
     {
-        text:   ['best',        'safari',      'cars'],
-        in:     [an.SLIDE_RIGHT, an.SLIDE_RIGHT, an.FADE_IN],
-        out:    [an.FADE_OUT,    an.SLIDE_UP,    an.SLIDE_DOWN],
+        text:   ['dev',        'tarek\'s'],
+        in:     [an.SLIDE_DOWN, an.SLIDE_UP],
+        out:    [an.SLIDE_DOWN, an.SLIDE_UP],
     },
     {
-        text:   ['coolest',        'library',      'ever'],
-        in:     [an.SLIDE_RIGHT, an.SLIDE_RIGHT, an.FADE_IN],
-        out:    [an.FADE_OUT,    an.SLIDE_UP,    an.SLIDE_DOWN],
+        text:   ['coolest',      'library',      'ever'],
+        in:     [an.SLIDE_RIGHT, an.SLIDE_DOWN,  an.SLIDE_LEFT],
+        out:    [an.SLIDE_RIGHT, an.FADE_OUT,    an.SLIDE_LEFT],
     },
     {
-        text:   ['coming',      'soon'],
-        in:     [an.SLIDE_LEFT,   an.SLIDE_RIGHT],
+        text:   ['coming',         'soon'],
+        in:     [an.FADE_IN,       an.FADE_IN],
         out:    [an.SLIDE_RIGHT,   an.SLIDE_LEFT],
     }, 
 ]
