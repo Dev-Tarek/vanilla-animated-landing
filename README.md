@@ -1,6 +1,7 @@
-## Vanilla JS Landing Page with SVG Animations
+# Vanilla JS Landing Page with SVG Animations
+![](images/preview.png)
 ___
-### Contents
+## Contents
 * [Introduction](#introduction)
 * [Features](#features)
 * [Classes](#classes)
@@ -9,11 +10,12 @@ ___
 * [Structure](#project-structure)
 ___
 
-### Introduction
+## Introduction
 This is a vanilla HTML-CSS-JS template to customize and develop - not a fully functional view. All code was written from scratch for practicing so this may not be the optimal implementation for you.
-```Tip: Test on a local server - e.g. VS Code live server```
 
-### Features
+_tip: test on a local server - e.g. vscode live server_
+
+## Features
 * Basic navigation bar
 * Animated text / titles
 * Basic image carousel
@@ -22,9 +24,9 @@ This is a vanilla HTML-CSS-JS template to customize and develop - not a fully fu
 * Control each transition speed and duration
 * Fully responsive
 
-### Classes
+## Classes
 
-#### AnimatedText
+### AnimatedText
 Parameters:
 - {DOM element object} container - DOM element to render the animated text on
 - {array} textList - array of {_text objects_}, each object represents a _text line_ in the animated text loop, and contains:
@@ -40,7 +42,7 @@ Methods:
 - render - renders the next line
 - play - initiates the animation loop
 
-##### Animations
+#### Animations
 Current implemented animations:
 - SLIDE_UP
 - SLIDE_RIGHT
@@ -49,7 +51,7 @@ Current implemented animations:
 - FADE_IN
 - FADE_OUT
 
-#### Carousel
+### Carousel
 Parameters:
 - {DOM element object} carousel - DOM element to render the carousel on
 - {array} images - array of {_image objects_}, each contains:
@@ -63,7 +65,7 @@ Methods:
 - render - renders the next image
 - play - initiates the animation loop
 
-#### Path
+### Path
 Parameters:
 - {string} svgId - target SVG element id to render the path inside
 - {array} pointsPercents - contains arrays of [x, y] in percentages of the [width, height] of current view
@@ -91,7 +93,7 @@ Methods:
 - generatePath - create the path curve as in [d] attirbute
 - render - render the path graphics inside the target SVG
 
-#### CircleObject
+### CircleObject
 Parameters:
 - {DOM G element} circlesGroup - parent SVG group element to contain the circle and text elements
 - {object} options:
@@ -118,10 +120,10 @@ Methods:
 - updatePosition (`steps = 0`) - move the `steps` in _positions_, if `steps = 0` it will update inplace (useful for responsiveness)
 - getPositionPoint - returns the circle position as point [x, y] on the parent path
 
-### Synchronization
+## Synchronization
 So far the view is not in real synchronization since it was implemented as a preview and not yet fully functional as mentioned. If you need to sync the transitions together, you can use `timeControl` object in `index.js` together with `timeControl.css` file.
 
-### Examples
+## Examples
 _Consider going through `index.js` for a full example._
 
 Creating Animated Text
@@ -201,7 +203,7 @@ setInterval(() => {
 }, timeControl.circlesInterval)
 ```
 
-### Project Structure
+## Project Structure
 
 ```
 |-- root
