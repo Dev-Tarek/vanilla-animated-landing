@@ -47,7 +47,7 @@ class AnimatedText {
             })
         }, swipeDelay - transitionSpeed);
     }
-    animate () {
+    play () {
         this.render();
         let { textList, swipeDelay } = this;
         return setInterval(() => {

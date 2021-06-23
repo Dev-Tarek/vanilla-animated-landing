@@ -47,7 +47,7 @@ let animatedText = new AnimatedText(animatedTextContainer, textList, {
     transitionSpeed: timeControl.animatedTextSpeed,
     swipeDelay: timeControl.animatedTextDelay
 });
-setTimeout(() => animationFunctions.push(animatedText.animate()), timeControl.introDelay);
+setTimeout(() => animationFunctions.push(animatedText.play()), timeControl.introDelay);
 
 // Carousel
 const images = [
