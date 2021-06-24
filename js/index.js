@@ -51,11 +51,11 @@ setTimeout(() => animationFunctions.push(animatedText.play()), timeControl.intro
 
 // Carousel
 const images = [
-    {src: './images/carousel/jeep.png', alt: 'Jeep'},
-    {src: './images/carousel/ford.png', alt: 'Ford'},
-    {src: './images/carousel/f150.png', alt: 'Ford F150'},
-    {src: './images/carousel/pathfinder.png', alt: 'Toyota'},
-    {src: './images/carousel/toyota.png', alt: 'Toyota'},
+    {src: '/images/carousel/jeep.png', alt: 'Jeep'},
+    {src: '/images/carousel/ford.png', alt: 'Ford'},
+    {src: '/images/carousel/f150.png', alt: 'Ford F150'},
+    {src: '/images/carousel/pathfinder.png', alt: 'Toyota'},
+    {src: '/images/carousel/toyota.png', alt: 'Toyota'},
 ];
 let carouselDiv = document.getElementById('carousel-div');
 let carousel = new Carousel(carouselDiv, images, {
