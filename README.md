@@ -13,8 +13,6 @@ ___
 ## Introduction
 This is a vanilla HTML-CSS-JS template to customize and develop - not a fully functional view. All code was written from scratch for practicing so this may not be the optimal implementation for you.
 
-_tip: test on a local server - e.g. vscode live server_
-
 ## Features
 * Basic navigation bar
 * Animated text / titles
