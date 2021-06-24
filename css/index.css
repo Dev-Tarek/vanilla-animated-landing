@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
-@import './css/components/Navbar.css';
-@import './css/components/AnimatedText.css';
-@import './css/components/Carousel.css';
-@import './css/components/SVG.css';
+@import './components/Navbar.css';
+@import './components/AnimatedText.css';
+@import './components/Carousel.css';
+@import './components/SVG.css';
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@ body {
 .back-div {
     width: 100%;
     height: 100%;
-    background-image: url('/images/desert.jpg');
+    background-image: url('../images/desert.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,11 +24,11 @@ body {
     height: 100%;
     width: 100%;
     background-color: #c7a07c;
-    mask-image: url('/images/masks/maskOverlayL.png'), url('/images/masks/maskOverlayR.png');
+    mask-image: url('../images/masks/maskOverlayL.png'), url('../images/masks/maskOverlayR.png');
     mask-position: bottom left, bottom right;
     mask-repeat: no-repeat;
     mask-size: contain;
-    -webkit-mask-image: url('/images/masks/maskOverlayL.png'), url('/images/masks/maskOverlayR.png');
+    -webkit-mask-image: url('../images/masks/maskOverlayL.png'), url('../images/masks/maskOverlayR.png');
     -webkit-mask-position: bottom left, bottom right;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
