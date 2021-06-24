@@ -8,12 +8,12 @@ svg {
     height: 100%;
     background-color: white;
 
-    mask-image: url('/images/masks/mask1.png'),  url('/images/masks/mask2.png');
+    mask-image: url('../../images/masks/mask1.png'),  url('../../images/masks/mask2.png');
     mask-repeat: no-repeat, no-repeat;
     mask-position: -1000px 100px, 0px 300px;
     mask-size: cover;
 
-    -webkit-mask-image: url('/images/masks/mask1.png'),  url('/images/masks/mask2.png');
+    -webkit-mask-image: url('../../images/masks/mask1.png'),  url('../../images/masks/mask2.png');
     -webkit-mask-repeat: no-repeat, no-repeat;
     -webkit-mask-position: -1000px 100px, 0px 300px;
     -webkit-mask-size: cover;
